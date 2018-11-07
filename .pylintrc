@@ -1,0 +1,5 @@
+[TYPECHECK]
+ignored-classes=Faker
+
+[MASTER]
+disable = no-member , missing-docstring, C0103

@@ -1,0 +1,45 @@
+curl -X PUT "localhost:9200/spsv_v1" -H 'Content-Type: application/json' -d'
+{
+    "mappings" : {
+        "events" : {
+            "properties" : {
+                "timestamp" : { "type" : "date", "format": "yyyy-MM-dd HH:mm:ss.SSS||yyyy-MM-dd HH:mm" }
+            }
+        }
+    }
+}
+'
+
+curl -XPOST localhost:9200/_aliases -H 'Content-Type: application/json' -d '
+{
+    "actions": [
+        { "add": {
+            "alias": "spsv",
+            "index": "spsv_v1"
+        }}
+    ]
+}
+'
+
+curl -X POST "localhost:9200/_reindex" -H 'Content-Type: application/json' -d'
+{
+  "source": {
+    "index": "spsv"
+  },
+  "dest": {
+    "index": "spsv_v1"
+  }
+}
+'
+
+curl -XPOST localhost:9200/spsv/_update_by_query -H 'Content-Type: application/json' -d'
+{
+  "script": {
+    "inline": "ctx._source.timestamp = ctx._source.timestamp.substring(0,ctx._source.timestamp.length()-3)",
+    "lang": "painless"
+  },
+  "query": {
+    "match_all": {}
+  }
+}
+'

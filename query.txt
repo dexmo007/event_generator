@@ -1,0 +1,59 @@
+GET /spsv_v1/events/_search
+{
+  "sort": [{"timestamp":"desc"}],
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "123",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "234",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "456",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "567",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "678",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "789",
+            "type": "phrase_prefix"
+          }
+        },
+         {
+          "multi_match": {
+            "fields": ["shipment","parcel","info"],
+            "query": "890",
+            "type": "phrase_prefix"
+          }
+        }
+        ]
+    }
+  }
+}

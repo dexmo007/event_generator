@@ -1,0 +1,3 @@
+docs count: 10293000
+storage size: 2.6gb
+primary storage size: 2.6gb

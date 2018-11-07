@@ -1,0 +1,166 @@
+{
+  "took": 90,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 5339,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "s8qR6mYBZ5daGUNkN-Xz",
+        "_score": null,
+        "_source": {
+          "parcel": "40275006",
+          "shipment": "23407718",
+          "info": "volkswagen llorem 4711 foo 0815 10900358 monitor summertime westernhagen llorem foo",
+          "timestamp": "2018-11-06 20:40:41.381"
+        },
+        "sort": [
+          1541536841381
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "5OuU6mYBZ5daGUNkvfL2",
+        "_score": null,
+        "_source": {
+          "parcel": "88698589",
+          "shipment": "42569496",
+          "info": "0815 bar 12305400 rammstein westernhagen",
+          "timestamp": "2018-11-06 20:35:34.848"
+        },
+        "sort": [
+          1541536534848
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "9NiS6mYBZ5daGUNkmAxN",
+        "_score": null,
+        "_source": {
+          "parcel": "73010397",
+          "shipment": "89005937",
+          "info": "summertime foo something westernhagen volkswagen 47443913 monitor volkswagen 4711",
+          "timestamp": "2018-11-06 20:35:18.407"
+        },
+        "sort": [
+          1541536518407
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "HsWQ6mYBZ5daGUNksQEl",
+        "_score": null,
+        "_source": {
+          "parcel": "81220552",
+          "shipment": "24137762",
+          "info": "bar something 4711 summertime volkswagen 78900844 0815 ipsum westernhagen monitor 4711",
+          "timestamp": "2018-11-06 20:26:36.538"
+        },
+        "sort": [
+          1541535996538
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "ngSX6mYBZ5daGUNkRQed",
+        "_score": null,
+        "_source": {
+          "parcel": "10307032",
+          "shipment": "23408615",
+          "info": "bar 0815 something 41722385 summertime 4711 foo bar",
+          "timestamp": "2018-11-06 20:26:00.613"
+        },
+        "sort": [
+          1541535960613
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "DMSQ6mYBZ5daGUNkp7oi",
+        "_score": null,
+        "_source": {
+          "parcel": "38600041",
+          "shipment": "12303351",
+          "info": "monitor llorem something 4711 westernhagen 16704598 summertime 4711 volkswagen monitor bar",
+          "timestamp": "2018-11-06 20:24:44.979"
+        },
+        "sort": [
+          1541535884979
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "qKuN6mYBZ5daGUNkyWkx",
+        "_score": null,
+        "_source": {
+          "parcel": "62286313",
+          "shipment": "73235088",
+          "info": "bar something 4711 summertime westernhagen 12303383 something westernhagen ipsum",
+          "timestamp": "2018-11-06 20:16:04.507"
+        },
+        "sort": [
+          1541535364507
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "ZbOO6mYBZ5daGUNk75Ur",
+        "_score": null,
+        "_source": {
+          "parcel": "26619178",
+          "shipment": "37410447",
+          "info": "ipsum llorem something 56702925 volkswagen 0815 summertime foo",
+          "timestamp": "2018-11-06 20:02:21.542"
+        },
+        "sort": [
+          1541534541542
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "KgCW6mYBZ5daGUNk7NQu",
+        "_score": null,
+        "_source": {
+          "parcel": "25330289",
+          "shipment": "45607307",
+          "info": "westernhagen ipsum something llorem volkswagen 14979489 0815 something westernhagen rammstein",
+          "timestamp": "2018-11-06 19:56:53.830"
+        },
+        "sort": [
+          1541534213830
+        ]
+      },
+      {
+        "_index": "spsv_v1",
+        "_type": "events",
+        "_id": "A7GO6mYBZ5daGUNkwbxg",
+        "_score": null,
+        "_source": {
+          "parcel": "86537408",
+          "shipment": "13587460",
+          "info": "foo something bar 0815 llorem 56707130 summertime rammstein 0815 monitor",
+          "timestamp": "2018-11-06 19:53:38.877"
+        },
+        "sort": [
+          1541534018877
+        ]
+      }
+    ]
+  }
+}
